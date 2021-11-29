@@ -47,7 +47,7 @@ public class MostRecentBillIntentHandler implements RequestHandler, InfoRetrieve
         URL url = new URL("https://api.propublica.org/congress/v1/bills/search.json?query=recent");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
-        conn.setRequestProperty("X-API-Key", "O1ZdWmc8x27g8x05YHkc0VYKHfCBYTTTuvDAt4Kn");
+        conn.setRequestProperty("X-API-Key", "<API-Key>");
         conn.setRequestProperty("Content-Type", "application/json");
         BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
